@@ -199,18 +199,18 @@
       </items>
       <items xsi:type="form:FormField">
         <name>СогласованнаяСкидка</name>
-        <id>163</id>
+        <id>168</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>СогласованнаяСкидка</segments>
+          <segments>Объект.СогласованнаяСкидка</segments>
         </dataPath>
         <extendedTooltip>
           <name>СогласованнаяСкидкаРасширеннаяПодсказка</name>
-          <id>165</id>
+          <id>170</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -225,7 +225,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>СогласованнаяСкидкаКонтекстноеМеню</name>
-          <id>164</id>
+          <id>169</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -245,9 +245,6 @@
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
-          <maxValue xsi:type="core:NumberValue">
-            <value>100</value>
-          </maxValue>
         </extInfo>
       </items>
       <items xsi:type="form:Button">
@@ -427,18 +424,18 @@
       </items>
       <items xsi:type="form:FormField">
         <name>КонтактноеЛицо</name>
-        <id>160</id>
+        <id>171</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>КонтактноеЛицо</segments>
+          <segments>Объект.КонтактноеЛицо</segments>
         </dataPath>
         <extendedTooltip>
           <name>КонтактноеЛицоРасширеннаяПодсказка</name>
-          <id>162</id>
+          <id>173</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -453,7 +450,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>КонтактноеЛицоКонтекстноеМеню</name>
-          <id>161</id>
+          <id>172</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -473,12 +470,6 @@
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
-          <choiceParameterLinks>
-            <name>Отбор.Владелец</name>
-            <datapath xsi:type="form:DataPath">
-              <segments>Объект.Контрагент</segments>
-            </datapath>
-          </choiceParameterLinks>
         </extInfo>
       </items>
       <visible>true</visible>
@@ -1909,45 +1900,6 @@
     </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>КонтактноеЛицо</name>
-    <title>
-      <key>ru</key>
-      <value>Контактное лицо</value>
-    </title>
-    <id>2</id>
-    <valueType>
-      <types>CatalogRef.АК_КонтактныеЛица</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>СогласованнаяСкидка</name>
-    <title>
-      <key>ru</key>
-      <value>Согласованная скидка</value>
-    </title>
-    <id>3</id>
-    <valueType>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>5</precision>
-        <scale>2</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
   </attributes>
   <formCommands>
     <name>ПересчитатьТаблицу</name>
